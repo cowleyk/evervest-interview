@@ -1,0 +1,78 @@
+[  
+    {  
+        "id":4,
+        "project_id":1,
+        "use_of_funds":{  
+            "Turbine Cost":200000000,
+            "Balance of Plant":100000000,
+            "Development Costs":50000000,
+            "Fees":15000000,
+            "Interconnection":25000000,
+            "Dev Fee":1000000
+        },
+        "construction_loan_terms":null,
+        "construction_loan_draw_schedule":null,
+        "target_irr":0.08,
+        "target_value":null,
+        "cod_financing":null,
+        "macrs":{  
+            "MACRS5":0.75,
+            "MACRS15":0.1,
+            "MACRS25":0.05
+        },
+        "loan_size":null,
+        "include_subsidies":true,
+        "description":"Sponsor Equity",
+        "display_id":1
+    },
+    {  
+        "id":5,
+        "project_id":1,
+        "use_of_funds":{  
+            "Turbine Cost":200000000,
+            "Balance of Plant":100000000,
+            "Development Costs":50000000,
+            "Fees":15000000,
+            "Interconnection":25000000
+        },
+        "construction_loan_terms":null,
+        "construction_loan_draw_schedule":null,
+        "target_irr":0.08,
+        "target_value":null,
+        "cod_financing":null,
+        "macrs":{  
+            "MACRS5":0.75,
+            "MACRS15":0.1,
+            "MACRS25":0.05
+        },
+        "loan_size":null,
+        "include_subsidies":true,
+        "description":"Tax Equity - 8% IRR",
+        "display_id":2
+    },
+    {  
+        "id":6,
+        "project_id":1,
+        "use_of_funds":{  
+            "Turbine Cost":179000000,
+            "Balance of Plant":100000000,
+            "Development Costs":25000000,
+            "Fees":25000000,
+            "Interconnection":25000000
+        },
+        "construction_loan_terms":null,
+        "construction_loan_draw_schedule":null,
+        "target_irr":0.08,
+        "target_value":null,
+        "cod_financing":null,
+        "macrs":{  
+            "MACRS5":0.8,
+            "MACRS15":0.1,
+            "MACRS25":0.05
+        },
+        "loan_size":null,
+        "include_subsidies":true,
+        "description":"P-ship flip 8% / BL @5%",
+        "display_id":3
+    }
+]

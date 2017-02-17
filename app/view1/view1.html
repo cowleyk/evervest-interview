@@ -1,1 +1,35 @@
 <p>This is the partial for view 1.</p>
+<div ng-controller="View1Ctrl">
+<table>
+  <tr>
+    <td>
+      <select ng-model="scenarioSelectOne">
+        <option value="4">Scenario 4</option>
+        <option value="5">Scenario 5</option>
+        <option value="6">Scenario 6</option>
+        <option value="7">Scenario 7</option>
+        <option value="8">Scenario 8</option>
+      </select>
+      <!-- <button ng-click="toggleScenario($ctrl.scenarioSelectOne)"></button> -->
+      <p>selected scenario: {{scenarioSelectOne}}</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tablelable">Asset Case</td>
+    <td class="databox">
+      <div class="assetBox">A-{{assetDisplayId}}</div>
+      <div class="descriptionBox">{{assetDescription}}</div>
+    </td>
+    <!-- <td class="databox">1</td> -->
+  </tr>
+  <tr>
+    <td class="tablelable">Capital Structure</td>
+    <td class="databox">
+      <div class="capBox">C-{{capDisplayId}}</div>
+      <div class="descriptionBox">{{capDescription}}</div>
+    </td>
+    <!-- <td class="databox">2</td> -->
+  </tr>
+
+</table>
+</div>

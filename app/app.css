@@ -1,1 +1,44 @@
 /* app css stylesheet */
+table{
+  width:100%;
+}
+
+.databox{
+  border: 1px solid blue;
+  width: auto;
+  height: auto;
+}
+
+.tablelable{
+  width: 40%;
+}
+
+select{
+  background-color: #00008B;
+  color: white;
+}
+
+.assetBox{
+  background-color: blue;
+  color: white;
+  display:inline;
+  width:20%;
+  height:50%;
+  padding:5%;
+  margin-left:5%;
+
+}
+
+.capBox{
+  background-color: green;
+  color: white;
+  display:inline;
+  width:20%;
+  height:50%;
+  padding:5%;
+  margin-left:5%;
+}
+
+.descriptionBox{
+  display:inline;
+}

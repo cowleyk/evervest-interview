@@ -1,0 +1,145 @@
+[  
+    {  
+        "id":3,
+        "project_id":1,
+        "wind_resource_id":20,
+        "offtake_agreement":[  
+            {  
+                "ramp":0.015,
+                "type":"ppa",
+                "terms":{  
+                    "percentage":1
+                },
+                "endDate":"2037-01-01",
+                "offtaker":"Utility XYZ",
+                "startDate":"2017-01-01",
+                "startingPrice":40.5
+            },
+            {  
+                "ramp":0,
+                "type":"merchant",
+                "terms":{  
+                    "percentage":1
+                },
+                "endDate":"2047-01-01",
+                "startDate":"2017-01-01",
+                "startingPrice":45
+            }
+        ],
+        "annual_maintenance_costs":{  
+
+        },
+        "first_year_ramp_up":[  
+            1,
+            1,
+            1,
+            1
+        ],
+        "description":"Base Case | Siemens 1.79-100",
+        "display_id":1,
+        "insurance":[  
+            {  
+                "startDate":"2017-01-01",
+                "endDate":"2047-01-01",
+                "name":"P&C",
+                "cost":250000,
+                "escalation":0.01
+            }
+        ],
+        "landrent":[  
+            {  
+                "startDate":"2017-01-01",
+                "endDate":"2047-01-01",
+                "name":"Land Lease #1",
+                "cost":1200000,
+                "escalation":0.01
+            },
+            {  
+                "name":"Land Lease #2",
+                "startDate":"2017-01-01",
+                "endDate":"2025-01-01",
+                "cost":750000,
+                "escalation":0
+            }
+        ],
+        "property_tax":[  
+            {  
+                "startDate":"2017-01-01",
+                "endDate":"2047-01-01",
+                "name":"Taxes",
+                "cost":1200000,
+                "escalation":0
+            }
+        ],
+        "mw_installed": 450,
+        "wtgs": 250,
+        "turbines": [
+            "Vestas 1.8 @ 80m",
+            "GE 1.5 @ 60m"
+        ]
+    },
+    {  
+        "id":4,
+        "project_id":1,
+        "wind_resource_id":18,
+        "offtake_agreement":[  
+            {  
+                "ramp":0.02,
+                "type":"ppa",
+                "terms":{  
+                    "percentage":1
+                },
+                "endDate":"2037-12-31",
+                "offtaker":"Utility XYZ",
+                "startDate":"2016-12-31",
+                "startingPrice":42
+            },
+            {  
+                "ramp":0.02,
+                "type":"merchant",
+                "terms":{  
+                    "percentage":1
+                },
+                "endDate":"2046-12-31",
+                "startDate":"2037-01-01",
+                "startingPrice":40
+            }
+        ],
+        "annual_maintenance_costs":{  
+            "annual":250000
+        },
+        "first_year_ramp_up":[  
+            0,
+            0,
+            0,
+            0
+        ],
+        "description":"Base Case | GE",
+        "display_id":2,
+        "insurance":[  
+            {  
+                "startDate":"2016-12-31",
+                "endDate":"2046-12-31",
+                "name":"Insurance",
+                "cost":350000,
+                "escalation":0.01
+            }
+        ],
+        "landrent":[  
+            {  
+                "startDate":"2016-12-31",
+                "endDate":"2046-12-31",
+                "name":"Rent",
+                "cost":1250000,
+                "escalation":0.01
+            }
+        ],
+        "property_tax":null,
+        "mw_installed": 350,
+        "wtgs": 100,
+        "turbines": [
+            "Vestas 1.8 @ 80m",
+            "GE 1.5 @ 60m"
+        ]
+    }
+]

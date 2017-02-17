@@ -1,0 +1,57 @@
+[  
+    {  
+        "id":4,
+        "project_id":1,
+        "asset_id":3,
+        "capital_structure_id":4,
+        "stress_id":null,
+        "description":"All equity",
+        "done":true,
+        "error_messages":null,
+        "failure":null
+    },
+    {  
+        "id":5,
+        "project_id":1,
+        "asset_id":3,
+        "capital_structure_id":5,
+        "stress_id":null,
+        "description":"TE and BL",
+        "done":true,
+        "error_messages":null,
+        "failure":null
+    },
+    {  
+        "id":6,
+        "project_id":1,
+        "asset_id":3,
+        "capital_structure_id":6,
+        "stress_id":null,
+        "description":"TE and BL revised",
+        "done":true,
+        "error_messages":null,
+        "failure":null
+    },
+    {  
+        "id":7,
+        "project_id":1,
+        "asset_id":4,
+        "capital_structure_id":4,
+        "stress_id":8,
+        "description":"All equity - GE turbines",
+        "done":true,
+        "error_messages":null,
+        "failure":null
+    },
+    {  
+        "id":8,
+        "project_id":1,
+        "asset_id":3,
+        "capital_structure_id":4,
+        "stress_id":null,
+        "description":"All equity - stressed",
+        "done":true,
+        "error_messages":null,
+        "failure":null
+    }
+]
