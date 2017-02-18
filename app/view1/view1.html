@@ -11,24 +11,25 @@
         <option value="8">Scenario 8</option>
       </select>
       <!-- <button ng-click="toggleScenario($ctrl.scenarioSelectOne)"></button> -->
+      <!-- initially used button as work-around for ng-click not working with <select> options -->
       <p>selected scenario: {{scenarioSelectOne}}</p>
     </td>
   </tr>
   <tr>
     <td class="tablelable">Asset Case</td>
+    <!-- display asset data -->
     <td class="databox">
       <div class="assetBox">A-{{assetDisplayId}}</div>
       <div class="descriptionBox">{{assetDescription}}</div>
     </td>
-    <!-- <td class="databox">1</td> -->
   </tr>
   <tr>
+    <!-- display asset data -->
     <td class="tablelable">Capital Structure</td>
     <td class="databox">
       <div class="capBox">C-{{capDisplayId}}</div>
       <div class="descriptionBox">{{capDescription}}</div>
     </td>
-    <!-- <td class="databox">2</td> -->
   </tr>
 
 </table>

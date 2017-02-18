@@ -10,34 +10,44 @@ angular.module('myApp.view1', ['ngRoute'])
 }])
 
 .controller('View1Ctrl', ['$scope', '$rootScope', function($scope, $rootScope) {
-  // const vm = this;
-  // $scope.assetid = 3;
   $scope.toggleScenario = function(val){
     let scenid = parseInt(val);
-    console.log(scenid);          //works
+    console.log(scenid);
+
+    // loop over scenario json object, looking back would use .filter(function(scenario){
+    //   return scenario.id === scenid;
+    // })
     for (var i = 0; i < scensJson.length; i++) {
-      console.log(scensJson[i].id); //works
+      console.log(scensJson[i].id);
 
       if(scensJson[i].id === scenid){
+        // retrieve asset & capital id to reference w/ appropriate objects
         $scope.assetid = scensJson[i].asset_id;
         console.log($scope.assetid);
         $scope.capitalid = scensJson[i].capital_structure_id;
       }
     }
+
+    // loop over asset object, assetJson.filter((asset) => asset.id === $scope.assetid)
     for (var i = 0; i < assetsJson.length; i++) {
       if(assetsJson[i].id === $scope.assetid){
+        // bind asset's proper description and display id to the view
         $scope.assetDescription = assetsJson[i].description;
         $scope.assetDisplayId = assetsJson[i].display_id
       }
     }
+    // loop over object, capJson.filter((cap) => cap.id === $scope.capitalid)
     for (var i = 0; i < capJson.length; i++) {
       if(capJson[i].id === $scope.capitalid){
+        // bind capital structure's proper description and display id to the view
         $scope.capDescription = capJson[i].description;
         $scope.capDisplayId = capJson[i].display_id;
       }
     }
   };
 
+  // $watch method on $scope triggers when scenarioSelectOne value is changed by dropdown
+  // when value is changed, the toggleScenario() is triggered w/ the chosen value
   $scope.$watch('scenarioSelectOne', function(newValue, oldValue){
     console.log('watched!');
     console.log('new', newValue);
